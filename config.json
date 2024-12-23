@@ -1,0 +1,4 @@
+{
+    "quarantine_directory": "quarantine",
+    "log_level": "INFO"
+}
