@@ -78,6 +78,28 @@ Trojan-Hunter is a Python-based tool for detecting, isolating, and reporting adv
 
 ---
 
+## How to Scan Files
+Trojan-Hunter allows you to scan specific files for potential Trojan viruses. Follow these steps:
+
+1. **Locate the File to Scan**:
+   - Identify the file you want to scan. For example: `/home/user/suspicious_file.exe`
+
+2. **Run the Tool with the File Path**:
+   - Modify the script or add functionality to pass the file path for scanning.
+
+3. **Example Usage**:
+   ```python
+   from trojan_hunter import scan_file
+
+   file_to_scan = "/home/user/suspicious_file.exe"
+   scan_file(file_to_scan)
+   ```
+
+4. **Results**:
+   - If the file is identified as malicious, it will be logged in `threat_log.txt` and moved to the `quarantine/` directory.
+
+___
+
 ## Logs and Quarantine
 - **Logs**:
   All events are logged in `threat_log.txt` for your review.
